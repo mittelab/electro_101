@@ -1,0 +1,41 @@
+\documentclass[12pt,handout,notes=off]{beamer}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage{tikz}
+
+\usepackage[]{hyperref}
+
+\usetikzlibrary{decorations}
+%\usetikzlibrary{snakes}
+
+\title{Corso di Introduzione all'Elettronica}
+\author[Alja\v{z}, Ruggero]{Alja\v{z} Srebrni\v{c} \and Ruggero Lot}
+\date[23/5]{Maggio 2015}
+\institute[Mittelab]{Mittelab}
+\logo{\includegraphics[scale=0.07]{./img/mittelab.pdf}}
+\usetheme{Rochester}
+%\useoutertheme[infolines]{}
+\setbeamercovered{dynamic}
+
+\begin{document}
+	
+	\begin{frame}[c]\frametitle{}
+		\color{red}\maketitle
+	\end{frame}
+
+	\begin{frame}\frametitle{Piano della presentazione}
+		\tableofcontents
+	\end{frame}
+	\note{Noi volgiamo partire da una base molto semplice di struttura della materia per capire cosa genera in realtà questa corrente e riuscire ad immaginarci un po' cosa sta accadendo
+prima di thompson non si pensava che l'atomo fosse un unità indivisibile poi invece tutto cambi}
+
+	\input{firstpart.tex}
+	\input{secondpart.tex}
+\end{document}
