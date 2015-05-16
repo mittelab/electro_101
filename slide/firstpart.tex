@@ -169,14 +169,39 @@
 		\end{frame}
 		
 		\begin{frame}[c]\frametitle{Codice dei colori, un paio di esempi}
-		    
-		 2 Esempi (da prendere in mittelab)
-		
+		    \centering
+			\includegraphics[width= 5 cm] {./img/E12.jpg}
+			\pause
+			\[
+			R = 1 ~~ 0 ~~ 10^{2} \pm 5\% \Omega
+			\]
+		\end{frame}
+
+		\begin{frame}[c]\frametitle{Codice dei colori, un paio di esempi}
+		    \centering
+			\begin{figure}[tb]
+				\centering
+				\includegraphics[width= 5 cm] {./img/E19.jpg}				
+				\label{fig:figure1}
+			\end{figure}
+
+			\pause
+			
+			\[
+			R = 1 ~~ 3 ~~ 0 ~~ 10^{8} \pm 1\% \Omega
+			\]
 		\end{frame}
 	% section la_resistenza (end)
 
 	\section{La differenza di potenziale} % (fold)
 	\label{sec:la_differenza_di_potenziale}
+		
+		\begin{frame}[c]\frametitle{DDP}
+		    
+			Parliamo ora della differenza di potenziale
+		
+		\end{frame}
+
 		\begin{frame}[c]\frametitle{DDP: un analogia molto chiarificatrice}
 		    
 			\includegraphics[width=10cm]{./img/ddp1.png}
@@ -193,7 +218,11 @@
 
 		\begin{frame}[c]\frametitle{Il nostro alimentatore}
 		    
-			FOTO Frontale\\
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width= 6cm]{./img/alim.jpg}
+				\label{fig:figure2}
+			\end{figure}
 			\color{red}Attenzione:
 			\color{black}per prima cosa azzerare le manopole e fissare il massimo della corrente.
 		
@@ -203,8 +232,10 @@
 
 	\section{La legge di OHM} % (fold)
 	\label{sec:la_legge_di_ohm}
-		\begin{frame}[c]\frametitle{La legge di OHM}
-		    	
+		\begin{frame}[c]\frametitle{La legge di Ohm}
+		     \begin{block}{Legge di Ohm}
+		     	La legge di Ohm esprime la legge costitutiva di proporzionalità diretta tra la differenza di potenziale elettrico applicata ai capi di un conduttore e l'intensità della corrente elettrica che lo attraversa. 	
+		     \end{block}
 			\[
 				V = R \times I
 			\]
@@ -223,7 +254,22 @@
 	\label{sec:il_multimetro}
 		\begin{frame}[c]\frametitle{I nostri multimetri}
 		    
-			Foto\\
+			\begin{figure}[tb]
+				\centering
+				\includegraphics[width= 5cm]{./img/M_small.jpg}
+				\label{fig:figure3}
+			\end{figure}
+
+			per ora non ci preoccupiamo troppo di come si collega, ve lo diciamo noi, ma appena avremmo imparato ad usare bene la legge di ohm capiremmo tutto		
+		\end{frame}
+
+		\begin{frame}[c]\frametitle{I nostri multimetri}
+		    
+			\begin{figure}[tb]
+				\centering
+				\includegraphics[width= 5cm]{./img/M_big.jpg}
+				\label{fig:figure3}
+			\end{figure}
 
 			per ora non ci preoccupiamo troppo di come si collega, ve lo diciamo noi, ma appena avremmo imparato ad usare bene la legge di ohm capiremmo tutto		
 		\end{frame}
@@ -233,8 +279,41 @@
 	\label{sec:il_nostro_primo_circuito}
 
 		\begin{frame}[c]\frametitle{Il nostro primo circuito}
-			    
-					Foto... in attesa di kikad
+			\centering
+			\begin{circuitikz} 
+				\draw (0,0)
+      			to[battery,v=$V_0$] (0,2) % The voltage source
+     			to[short] (2,2)
+      			to[R=$R$] (2,0) % The resistor
+     			to[short] (0,0);
+			\end{circuitikz}
+		\end{frame}
+
+		\begin{frame}[c]\frametitle{Il nostro primo circuito}
+		    \centering
+			\begin{circuitikz} 
+			\draw (0,0)
+      			to[V,v=$V_0$] (0,2) % The voltage source
+     			to[short] (2,2)
+      			to[R=$R$] (2,0) % The resistor
+     			to[short] (0,0);
+			\end{circuitikz}
 		
+		
+		\end{frame}
+
+		\begin{frame}[c]\frametitle{Il nostro primo circuito}
+		    \centering
+			\begin{circuitikz} 
+			\draw (0,0)
+      			to[V,v=$V_0$] (0,2) % The voltage source
+     			to[ammeter] (2,2)
+      			to[R=$R$] (2,0) % The resistor
+     			to[short] (0,0);
+     		\draw (2,2)
+     			to [short] (4,2)
+     			to [voltmeter] (4,0)
+     			to [short] (2,0);
+			\end{circuitikz}		
 		\end{frame}	
 	% section il_nostro_primo_circuito (end)
