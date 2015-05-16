@@ -1,0 +1,292 @@
+\section{Serie? Parallelo?}
+\label{sec:serie-parallelo}
+\begin{frame}
+  \frametitle{Resistenza equivalente}
+  Se abbiamo una rete composta solamente da resistori, è possibile sostituirli con uno soltanto?
+  \begin{figure}
+    \centering
+    \includegraphics<1>[scale=0.39]{./img/nerd_sniping}
+    \only<2>{
+    \begin{tikzpicture}[circuit ee IEC,set resistor graphic=var resistor IEC graphic]
+      \node[contact] (contact left) at (1,0) {};
+      \node[contact] (contact middle) at (3,0) {};
+      \node[contact] (contact upper right) at (5,0.5) {};
+      \node[contact] (contact lower right) at (5,-0.5) {};
+      \node[resistor,ohm=150] (R1) at (2,0) {};
+      \node[resistor,ohm=100] (R2) at (4,0.5) {};
+      \node[resistor,ohm=200] (R3) at (4,-0.5) {};
+      \node[resistor,ohm'=530] (R4) at (3,-1) {};
+      \node[resistor,ohm=530] (R5) at (2,1.5) {};
+      \node[resistor,ohm=530] (R6) at (4,1.5) {};
+      \draw (0,0) to (contact left) to (R1) to (contact middle) |- (R3.input);
+      \draw (contact middle) |- (R2.input);
+      \draw (contact left) |- (R5.input);
+      \draw (R5) to (R6) -| (contact upper right);
+      \draw (contact left) |- (R4.input);
+      \draw (R2) to (contact upper right);
+      \draw (R3) to (contact lower right);
+      \draw (R4) -| (contact lower right);
+      \draw (contact lower right) to (contact upper right) to (5.5,0.5);
+
+      \node at (6,0.5) {$\equiv$};
+      \node[resistor,ohm=?] (R) at (7,0.5) {};
+    \end{tikzpicture}
+    }
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \Huge Iniziamo da qualcosa di più semplice\ldots
+\end{frame}
+
+\begin{frame}{Resistori in serie}
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[circuit ee IEC,
+                        set resistor graphic=var resistor IEC graphic]
+      \draw<1-2> (0,0) to [resistor={ohm=100}] (3,0)
+                  to [resistor={ohm=100}] (6,0);
+      \draw<3-> (2,0) to [resistor={ohm=200}] (5,0);
+    \end{tikzpicture}
+  \end{figure}
+  \begin{itemize}
+  \item<1-> Cosa succede se colleghiamo due resistori in serie?
+  \item<1-> Ripensate al modello di Drude\ldots
+  \item<invisible@1> Se prendiamo due resistori uguali, avremo il doppio degli atomi contro cui gli elettroni collidono!
+  \item<invisible@1> Quindi, la resistenza equivalente di due resistori uguali sarà\ldots
+  \item<invisible@-2> \ldots{}il doppio della resistenza del singolo!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Proviamo:}
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[circuit ee IEC, set resistor graphic= var resistor IEC graphic]
+        \draw (0,4.5) to [resistor={ohm=1k}]   (3,4.5)
+                      to [resistor={ohm=15k}]  (6,4.5);
+        \draw (0,3)   to [resistor={ohm=2k}]   (2,3)
+                      to [resistor={ohm=30k}]  (4,3)
+                      to [resistor={ohm=0.2M}] (6,3);
+        \draw (0,1.5) to [resistor={ohm=200}]  (2,1.5)
+                      to [resistor={ohm=1k}]   (4,1.5)
+                      to [resistor={ohm=300}]  (6,1.5);
+        \draw (0,0)   to [resistor={ohm=100}]  (3,0)
+                      to [resistor={ohm=150}]  (6,0);
+      \only<2> {
+        \foreach \x in {0,1.5,3,4.5} {
+          \node at (6.5, \x) {$\equiv$};
+        }
+        \draw (7,4.5) to [resistor={ohm=16k}]  (10,4.5);
+        \draw (7,3)   to [resistor={ohm=232k}] (10,3);
+        \draw (7,1.5) to [resistor={ohm=1.5k}] (10,1.5);
+        \draw (7,0)   to [resistor={ohm=250}]  (10,0);
+      }
+    \end{tikzpicture}
+  \end{figure}
+\end{frame}
+\begin{frame}{Resistori in parallelo}
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[circuit ee IEC, set resistor graphic=var resistor IEC graphic]
+      \only<1>{
+        \node[contact] (left contact) at (1,0) {};
+        \node[contact] (right contact) at (4,0) {};
+        \draw (0,0) to (left contact);
+        \draw (left contact) to (1,0.5) to [resistor={ohm=100}] +(3,0) to (right contact); 
+        \draw (left contact) to (1,-0.5) to [resistor={ohm'=100}] +(3,0) to (right contact);
+        \draw (right contact) to (5,0);
+      }
+      \only<2>{
+        \draw (0,0) to [resistor={ohm=50}] (3,0);
+      }
+    \end{tikzpicture}
+  \end{figure}
+  \begin{itemize}
+    \begin{overlayarea}{\textwidth}{3cm}
+        \only<1>{\item È come se avessimo un resistore, ma due volte più ``grosso''! Quindi\ldots}
+        \only<2>{\item \ldots{}due resistori uguali in parallelo avranno una resistenza equivalente pari alla metà di quella del singolo resistore!
+        \begin{eqnarray*}
+            \frac{1}{R} =& \frac{1}{R_1} + \frac{1}{R_2} \\
+                        =& \frac{R_1 R_2}{R_1 + R_2}
+        \end{eqnarray*}
+      }
+      \end{overlayarea}
+    \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Facciamo un pò di pratica\ldots}
+  \begin{figure}[ht]
+    \centering
+     \begin{tikzpicture}[circuit ee IEC, set resistor graphic=var resistor IEC graphic]
+       \foreach \y/\contact in {0/1,2/2,4.5/3}
+       {
+         \node[contact] (left contact \contact) at (1,\y) {};
+         \node[contact] (right contact \contact) at (4,\y) {};
+         \draw (0,\y) to (left contact \contact);
+         \draw (right contact \contact) to (5,\y);
+         \node<2> at (5.5,\y) {$\equiv$};
+       }
+        \draw (left contact 1) to (1,0.5) to [resistor={ohm=450}] +(3,0) to (right contact 1); 
+        \draw (left contact 1) to (1,-0.5) to [resistor={ohm=150}] +(3,0) to (right contact 1);
+        \draw (left contact 2) to (1,1.5) to [resistor={ohm=420}] +(3,0) to (right contact 2);
+        \draw (left contact 2) to (1,2.5) to [resistor={ohm=10k}] +(3,0) to (right contact 2);
+        \draw (left contact 3) to (1,3.5) to [resistor={ohm=400}] +(3,0) to (right contact 3);
+        \draw (left contact 3) to (1,4.5) to [resistor={ohm=400}] +(3,0) to (right contact 3);
+        \draw (left contact 3) to (1,5.5) to [resistor={ohm=300}] +(3,0) to (right contact 3);
+        \only<2> {
+          \draw (6,0) to [resistor={ohm=112.5}] +(3,0);
+          \draw (6,2) to [resistor={ohm=403.1}] +(3,0);
+          \draw (6,4.5) to [resistor={ohm=120}] +(3,0);
+        }
+     \end{tikzpicture}
+   \end{figure}
+\end{frame}
+
+\begin{frame}{E ora\ldots tutto insieme!}
+  \begin{alertblock}{Importante!}
+    Purtroppo non c'è una regola fissa per risolvere circuiti misti (non si può fare prima tutto parallelo o prima tutto in serie). Bisogna analizzare il circuito che abbiamo di fronte e semplificarlo un ``livello'' per volta.
+    \begin{itemize}
+    \item Si parte dalla spira più ``interna''
+    \item si procede man mano verso l'esterno
+    \end{itemize}
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Torniamo al circuito visto prima\ldots}
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[circuit ee IEC,set resistor graphic=var resistor IEC graphic]
+      \node<-3>[contact] (contact left) at (1,0) {};
+      \node<1>[contact] (contact middle) at (3,0) {};
+      \node<1>[contact] (contact upper right) at (5,0.5) {};
+      \node<1>[contact] (contact lower right) at (5,-0.5) {};
+      \node<2-3>[contact] (contact right) at (5,0) {};
+
+      \node<1-2>[resistor,ohm=150] (R1) at (2,0) {};
+      \node<1>[resistor,ohm=100] (R2) at (4,0.5) {};
+      \node<1>[resistor,ohm=200] (R3) at (4,-0.5) {};
+      \node<2>[resistor,ohm=?] (R23) at (4,0) {};
+      \node<3>[resistor,ohm=?] (R123) at (3,0) {};
+      \node<-3>[resistor,ohm'=530] (R4) at (3,-1) {};
+      \node<1-2>[resistor,ohm=530] (R5) at (2,1.5) {};
+      \node<1-2>[resistor,ohm=530] (R6) at (4,1.5) {};
+      \node<3>[resistor,ohm=?] (R56) at (3,1.5) {};
+
+      \draw<1-2> (contact left) to (R1);
+      \draw<3> (contact left) to (R123) to (contact right);
+
+      \draw<1> (R1) to (contact middle) |- (R3.input);
+      \draw<1> (contact middle) |- (R2.input);
+      \draw<2> (R1) to (R23) to (contact right);
+
+      \draw<-2> (contact left) |- (R5.input);
+      \draw<-2> (R5) to (R6);
+      \draw<3> (contact left) |- (R56) -| (contact right);
+
+      \draw<1> (R6) -| (contact upper right);
+      \draw<2> (R6) -| (contact right);
+      \draw<-3> (contact left) |- (R4.input);
+      \draw<2> (R4) -| (contact right);
+
+      \draw<1> (R2) to (contact upper right);
+      \draw<1> (R3) to (contact lower right);
+      \draw<1> (R4) -| (contact lower right);
+      \draw<3> (R4) -| (contact right);
+
+      % Extremities
+      \draw<-3> (0,0) to (contact left);
+      \draw<1> (contact lower right) to (contact upper right) to (5.5,0.5);
+      \draw<2-3> (contact right) to (5.5, 0);
+      
+      \draw<4> (0,0) to [resistor={ohm=?}] (5.5,0);
+
+    \end{tikzpicture}
+  \end{figure}
+\end{frame}
+
+\section{Kirchhoff}
+\label{sec:kirchoff}
+\begin{frame}
+  \frametitle{Ma perché è cosi?}
+  \begin{itemize}
+    \item Dev'esserci una legge che governa come si comportano le correnti e le tensioni all'interno di un circuito.
+    \item Infatti c'è: le due leggi ti Kirchhoff!
+      \begin{itemize}
+        \item Legge di Kirchhoff per le tensioni
+        \item Legge di Kirchhoff per le correnti
+      \end{itemize}
+      \item Vediamole in dettaglio\ldots
+  \end{itemize}
+\end{frame}
+
+\subsection{Kirchhoff per le tensioni}
+\label{subsec:kirchhoff_per_le_tensioni}
+
+\begin{frame}
+  \frametitle{La spira!}
+  \begin{itemize}
+    \item Definita come un circuito ``chiuso''
+    \item Percorso che ritorna al punto di partenza
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[circuit ee IEC,set resistor graphic=var resistor IEC graphic]
+      \draw (0,0) to [voltage source={info=V1}] (0,2) to [resistor={info=R1}] (2,2) to [resistor={info=R2}] (2,0) to [voltage source={info=V2}] (0,0);
+    \end{tikzpicture}
+  \end{figure}
+\end{frame}
+\begin{frame}
+  \frametitle{Legge delle tensioni}
+  \begin{block}{Eccola qui:}
+    La somma di tutte le cadute di potenziale lungo una spira è uguale a 0.
+  \end{block}
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[circuit ee IEC,set resistor graphic=var resistor IEC graphic]
+      \draw (0,0) to [voltage source={direction info={->,volt=5}}] (0,2) to [resistor={ohm=100}] (2,2) to [resistor={ohm=2k}] (2,0) to [voltage source={direction info={->,volt=2}}] (0,0);
+    \end{tikzpicture}
+  \end{figure}
+\end{frame}
+
+\subsection{Kirchhoff per le correnti}
+\label{subsec:kirchhoff_per_le_correnti}
+\begin{frame}
+  \frametitle{Il nodo}
+  \begin{block}{Definizione}
+    Il nodo è un punto nel circuito dove si congiungono tre o più linee.
+  \end{block}
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[circuit ee IEC,set resistor graphic=var resistor IEC graphic]
+      \node [contact] (contact) at (0,0) {};
+      \draw (-1,0) to [current direction={info=$I_1$}] (contact) to [current direction={info=$I_3$}] (1,0);
+      \draw (0,1) to [current direction'={near start, info=$I_2$}] (contact);
+    \end{tikzpicture}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{La legge delle correnti}
+  \begin{block}{Enunciato}
+    La somma di tutte le correnti entranti (e uscenti) in un nodo è uguale a 0.
+    \[ I_1 + I_2 + I_3 = 0 \]
+  \end{block}
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[circuit ee IEC,set resistor graphic=var resistor IEC graphic]
+      \node [contact] (contact) at (0,0) {};
+      \draw (-1,0) to [current direction={info=$I_1$}] (contact) to [current direction={info=$I_3$}] (1,0);
+      \draw (0,1) to [current direction'={near start, info=$I_2$}] (contact);
+    \end{tikzpicture}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \Huge E ora un po' di pratica\ldots
+\end{frame}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "slide"
+%%% End:
