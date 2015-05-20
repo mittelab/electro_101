@@ -7,25 +7,32 @@
 			\includegraphics[width=4cm]{./img/thompson.jpg}
 			\includegraphics[width=4cm]{./img/tubo.jpg}
 			\pause
-			\item 1900  $\longrightarrow$ Primo modello di metallo proposto da Paul Drude (1863 – 1906) con l'atomo a panettone
+			\item 1900  $\longrightarrow$ Primo modello di metallo proposto da Paul Drude (1863 – 1906) con l' \href{http://www.dmf.unicatt.it/~sangalet/PLS/Buone_pratiche/Esperimento_Rutherford.pdf}{atomo a panettone}
 			%\includegraphics[width=2cm]{./img/Drude.jpg}
 			\pause
 			\item 1911  $\longrightarrow$ Atomo di Ernest Rutherford ( 1871 – 1937)
 		\end{itemize}
 	\end{frame}
-	\note{2 parole sul modello a panettone e su come si sono accorti che questo non funzionava grazie allo scattering di particelle alfa elio \href{http://www.dmf.unicatt.it/~sangalet/PLS/Buone_pratiche/Esperimento_Rutherford.pdf}{fonte} 1/8000 falliva la previsione, figata che è la scienza, il modello di drude è quanto andremo noi a vedere anche se precisiamo già da ora che è falso ma rende molto bene l'idea.}
 
 	\begin{frame}[c]\frametitle{Atomo di Rutherford}
 	    
-		\centering \includegraphics[width=9cm]{./img/atomo.jpg}
+		\begin{figure}[tb]
+			\centering
+			\includegraphics[width=9cm]{atomo.jpg}
+			\label{fig:atomo_di_Rutherford}
+		\end{figure}
 
 	\end{frame}
-	\note{elettroni legati!!!!}
 
 	\begin{frame}[c]\frametitle{Atomo di rame}
 	    \begin{columns}
-			\begin{column}{0.4\textwidth}
-				\centering \includegraphics[width=5cm]{./img/rame.png}
+			\begin{column}{0.5\textwidth}
+			\begin{figure}[tb]
+				\centering
+				\includegraphics[width=5cm]{rame.png}
+				\caption{Configurazione elettronica dell'atomo di rame (Cu)}
+				\label{fig:atomo_di_rame}
+			\end{figure}
 			\end{column}
 			\begin{column}{0.4\textwidth}
 				\begin{itemize}
@@ -53,11 +60,15 @@
 		\begin{frame}[c]\frametitle{Il metallo}
 		    
 		Cosa accade quando avviciniamo molti atomi?
-		\centering \includegraphics[width=9cm]{./img/model.png}
-		
-		\end{frame}
 
-		\note{gli elettoni si muovono a caso ma la velocità media è nulla, non interagiscono fra di loro, interagiscono solo con gli atomi}
+		\begin{figure}[tb]
+			\centering
+			\includegraphics[width=9cm]{model.png}
+			\caption{Pagina Ashcroft\/Mermin}
+			\label{fig:figure1}
+		\end{figure}
+				
+		\end{frame}
 		
 		\begin{frame}[c]\frametitle{Se applichiamo una differenza di potenziale?}
 			\begin{columns}
@@ -77,7 +88,7 @@
 
 				\end{column}
 			\end{columns}
-			--note a mano--
+			--note a mano-> convertire in slide
 		\end{frame}
 		\note{gli elettroni cominciano a muoversi con una direzione preferenziale }
 
@@ -92,6 +103,17 @@
 
 	\section{La corrente} % (fold)
 	\label{sec:la_corrente}
+
+	\begin{frame}[c]\frametitle{La corrente}
+	    
+		\begin{block}{Definizione}
+			asdfdasf
+		\end{block}
+		\[
+		I = \frac{Q}{t}
+		\]
+	
+	\end{frame}
 	
 	% section la_corrente (end)
 
@@ -102,19 +124,28 @@
 		\end{frame}
 		\begin{frame}[c]\frametitle{Resistenza:Come si misura e come si calcola?}
 		    \begin{columns}
-		    	\begin{column}{0.5\textwidth}
+		    	\begin{column}{0.4\textwidth}
+		    		\begin{figure}[tb]
+		    			\centering
+		    			\includegraphics[width=2.5cm]{Resistivity_geometry.png}
+		    			\label{fig:resistenza_resistivita}
+		    		\end{figure}
 		    		\[
-		    		 R = \frac{\rho L}{A}
+		    		 R = \frac{\rho l}{A}
 		    		\]
-		    		Dove $\rho$ è in $\Omega$ per metro\\
-		    		Osservazione, l'oro non conduce poi così bene, perché allora si comprano i contatti placcati in oro?		    		
+		    		Dove $\rho$ è in $\Omega$ per metro.\\
+		    		\scriptsize{Osservazione: l'oro non conduce poi così bene, perché allora si comprano i contatti placcati in oro?}
 		    	\end{column}
-		    	\begin{column}{0.7\textwidth}
-		    		\includegraphics[width=5.5cm]{./img/rho.jpg}
+		    	\begin{column}{0.8\textwidth}
+		    		\begin{figure}[tb]
+		    			\centering
+		    			\includegraphics[width=5.5cm]{rho.jpg}
+		    			\caption{A\&M}
+		    			\label{fig:resistivita}
+		    		\end{figure}
 		    	\end{column}
 		    \end{columns}	
 		\end{frame}
-		\note{NON SI OSSIDANO}
 
 		\begin{frame}[c]\frametitle{Resistori: come si comprano?}
 		    \centering
@@ -130,6 +161,7 @@
 		\bigskip
 		
 		Nota: vengono vendute a pacchi da mille circa per 3-4 euro
+		---- aggiungere slide sulla mappatura dello spazio -----
 		
 		\end{frame}
 
@@ -155,40 +187,78 @@
 		\end{frame}
 
 		\begin{frame}[c]\frametitle{Resistori: come si comprano?}
-		    \centering
+		
 		E se non è in nessun elenco? lo scopriamo dopo :)\\
 		Piuttosto: Come le distinguiamo?\\
-		\includegraphics[width=4cm]{./img/resistenze.jpg}
+		
+		\begin{figure}[tb]
+			\centering
+			\includegraphics[width=4cm]{resistenze.jpg}
+			\caption{Alcune resistenze di varia potenza}
+			\label{fig:resistenze1}
+		\end{figure}
 		
 		\end{frame}
 
 		\begin{frame}[c]\frametitle{Resistori: come distinguono?}
-			\includegraphics[width= 5cm]{./img/r5.png}
-		    \includegraphics[width= 5cm]{./img/r1.png}\\
-		    \centering \includegraphics[width= 8cm]{./img/codice.png}
+			\includegraphics[width= 5cm]{r5.png}
+		    \includegraphics[width= 5cm]{r1.png}\\
+		    \centering \includegraphics[width= 8cm]{codice.png}
+		\end{frame}
+
+		\begin{frame}[c]\frametitle{Resistori: La dipendenza dalla temperatura}
+		    
+			La resistenza aumenta all'aumentare della temperatura, ma come?
+			\[
+			R(T) = R_0 \left(1 + \alpha \left(T - T_0\right)\right)
+			\]
+			dove
+			\begin{itemize}
+				\item $R_0$ è la resistenza a temperatura ambiente $\si{\ohm}$
+				\item $T$ è la temperatura di arrivo $\si{\celsius}$
+				\item $T_0$ è la temperatura ambiente $\si{\celsius}$
+				\item $\alpha$ è il coefficiente di temperatura $\si{\per\celsius}$
+			\end{itemize}
+		
 		\end{frame}
 		
 		\begin{frame}[c]\frametitle{Codice dei colori, un paio di esempi}
-		    \centering
-			\includegraphics[width= 5 cm] {./img/E12.jpg}
-			\pause
+		    \begin{figure}[tb]
+		    	\centering
+		    	\includegraphics[width= 5 cm] {./img/E12.jpg}
+		    	\label{fig:resistore_E12}
+		    \end{figure}
+		    \only<2>{\color{brown}{marrone} \color{black} $\longrightarrow$ 1}
+		    \only<3>{\color{black}{nero} \color{black} $\longrightarrow$ 0}
+		    \only<4>{\color{red}{rosso} \color{black} $\longrightarrow$ 2}
+		    \only<5>{\color{yellow}{oro} \color{black} $\longrightarrow ~ \pm 5\% $}
 			\[
-			R = 1 ~~ 0 ~~ 10^{2} \pm 5\% \Omega
+			\only<1> {R =}
+			\only<2> {R = 1 }
+			\only<3> {R = 10}
+			\only<4> {R = 10*10^{2}}
+			\only<5> {R = 1000  \pm 5\% \si{\ohm}}
 			\]
 		\end{frame}
 
 		\begin{frame}[c]\frametitle{Codice dei colori, un paio di esempi}
-		    \centering
 			\begin{figure}[tb]
 				\centering
-				\includegraphics[width= 5 cm] {./img/E19.jpg}				
-				\label{fig:figure1}
+				\includegraphics[width= 5 cm,angle=180] {E19.jpg}			
+				\label{fig:resistore_E19}
 			\end{figure}
-
-			\pause
-			
+			\only<2>{\color{brown}{marrone} \color{black} $\longrightarrow$ 1}
+		    \only<3>{\color{gray}{grigio} \color{black} $\longrightarrow$ 8}
+		    \only<4>{\color{black}{nero} \color{black} $\longrightarrow$ 0}
+		    \only<5>{\color{orange}{arancio} \color{black} $\longrightarrow$ 3}
+		    \only<6>{\color{brown}{marrone} \color{black} $\longrightarrow ~ \pm 1\% $}
 			\[
-			R = 1 ~~ 3 ~~ 0 ~~ 10^{8} \pm 1\% \Omega
+			\only<1> {R =}
+			\only<2> {R = 1 }
+			\only<3> {R = 18}
+			\only<4> {R = 180}
+			\only<5> {R = 180*10^{3}}
+			\only<6> {R = 180  \pm 1\% \si{\kilo\ohm}}
 			\]
 		\end{frame}
 	% section la_resistenza (end)
@@ -204,13 +274,13 @@
 
 		\begin{frame}[c]\frametitle{DDP: un analogia molto chiarificatrice}
 		    
-			\includegraphics[width=10cm]{./img/ddp1.png}
+			\includegraphics[width=10cm]{ddp1.png}
 		
 		\end{frame}
 
 		\begin{frame}[c]\frametitle{DDP: un analogia molto chiarificatrice}
 		    
-			\includegraphics[width=8CM]{./img/ddp2.png}\\
+			\includegraphics[width=8CM]{ddp2.png}\\
 
 			\href{http://web.mclink.it/MK1411/Apprendistato/ImpiantiElettrici/Lezioni\%20di\%20Elettrotecnica/Lezione\%201_30_Web.htm}{Fonte}
 		
@@ -220,7 +290,7 @@
 		    
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width= 6cm]{./img/alim.jpg}
+				\includegraphics[width= 6cm]{alim.jpg}
 				\label{fig:figure2}
 			\end{figure}
 			\color{red}Attenzione:
@@ -241,9 +311,11 @@
 			\]
 
 			\begin{itemize}
+				\pause
 				\item Dove $V$ è la tensione $R$ è la resistenza e $I$ è la corrente.
 				\pause
 			 	\item \`E una relazione lineare
+			 	\pause
 			 	\item Noi non l'abbiamo dimostrata e la caliamo dal celo ma la nostra prima esperienza consisterà in una sua verifica.
 			 \end{itemize} 
 
@@ -267,11 +339,10 @@
 		    
 			\begin{figure}[tb]
 				\centering
-				\includegraphics[width= 5cm]{./img/M_big.jpg}
+				\includegraphics[width= 3.5cm]{./img/M_Big.jpg}
 				\label{fig:figure3}
 			\end{figure}
-
-			per ora non ci preoccupiamo troppo di come si collega, ve lo diciamo noi, ma appena avremmo imparato ad usare bene la legge di ohm capiremmo tutto		
+		
 		\end{frame}
 	% section il_multimetro (end)
 

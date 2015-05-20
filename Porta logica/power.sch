@@ -1,0 +1,178 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Porta logica-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date "20 may 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_2 P3
+U 1 1 555B829A
+P 2800 2300
+F 0 "P3" V 2750 2300 40  0000 C CNN
+F 1 "Batteria" V 2850 2300 40  0000 C CNN
+F 2 "" H 2800 2300 60  0000 C CNN
+F 3 "" H 2800 2300 60  0000 C CNN
+	1    2800 2300
+	-1   0    0    1   
+$EndComp
+Text HLabel 7200 2400 2    60   Output ~ 0
+Gnd
+Text HLabel 7200 2200 2    60   Output ~ 0
+Vcc
+$Comp
+L LM7805 U5
+U 1 1 555B85A4
+P 5650 2250
+F 0 "U5" H 5800 2054 60  0000 C CNN
+F 1 "LM7805" H 5650 2450 60  0000 C CNN
+F 2 "" H 5650 2250 60  0000 C CNN
+F 3 "" H 5650 2250 60  0000 C CNN
+	1    5650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3500 7050 3500
+Wire Wire Line
+	5650 2500 5650 3600
+Wire Wire Line
+	7200 2400 7050 2400
+Wire Wire Line
+	7050 2400 7050 3500
+Connection ~ 5650 3500
+$Comp
+L CAPAPOL C2
+U 1 1 555B88E7
+P 6300 2800
+F 0 "C2" H 6350 2900 40  0000 L CNN
+F 1 "0.1u" H 6350 2700 40  0000 L CNN
+F 2 "~" H 6400 2650 30  0000 C CNN
+F 3 "~" H 6300 2800 300 0000 C CNN
+	1    6300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C1
+U 1 1 555B88F6
+P 4550 2800
+F 0 "C1" H 4600 2900 40  0000 L CNN
+F 1 "0.33u" H 4600 2700 40  0000 L CNN
+F 2 "~" H 4650 2650 30  0000 C CNN
+F 3 "~" H 4550 2800 300 0000 C CNN
+	1    4550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3000 6300 3500
+Connection ~ 6300 3500
+Wire Wire Line
+	4550 2600 4550 2200
+Connection ~ 4550 2200
+Wire Wire Line
+	4550 3000 4550 3500
+Connection ~ 4550 3500
+$Comp
+L GND #PWR020
+U 1 1 555B893B
+P 5650 3600
+F 0 "#PWR020" H 5650 3600 30  0001 C CNN
+F 1 "GND" H 5650 3530 30  0001 C CNN
+F 2 "" H 5650 3600 60  0000 C CNN
+F 3 "" H 5650 3600 60  0000 C CNN
+	1    5650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P4
+U 1 1 555B8B69
+P 2800 2950
+F 0 "P4" V 2750 2950 40  0000 C CNN
+F 1 "Alimentatore" V 2850 2950 40  0000 C CNN
+F 2 "" H 2800 2950 60  0000 C CNN
+F 3 "" H 2800 2950 60  0000 C CNN
+	1    2800 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D24
+U 1 1 555B8B78
+P 3500 2200
+F 0 "D24" H 3500 2300 40  0000 C CNN
+F 1 "1N4148" H 3500 2100 40  0000 C CNN
+F 2 "~" H 3500 2200 60  0000 C CNN
+F 3 "~" H 3500 2200 60  0000 C CNN
+	1    3500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D25
+U 1 1 555B8B85
+P 3500 2850
+F 0 "D25" H 3500 2950 40  0000 C CNN
+F 1 "1N4148" H 3500 2750 40  0000 C CNN
+F 2 "~" H 3500 2850 60  0000 C CNN
+F 3 "~" H 3500 2850 60  0000 C CNN
+	1    3500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2850 3300 2850
+Wire Wire Line
+	3150 2200 3300 2200
+Wire Wire Line
+	3700 2200 3700 2850
+Wire Wire Line
+	3700 2200 5250 2200
+Wire Wire Line
+	3150 2400 3200 2400
+Wire Wire Line
+	3200 2400 3200 3500
+Wire Wire Line
+	3200 3050 3150 3050
+Connection ~ 3200 3050
+Wire Wire Line
+	6050 2200 7200 2200
+Wire Wire Line
+	6300 2600 6300 2200
+Connection ~ 6300 2200
+Connection ~ 6050 2200
+$EndSCHEMATC

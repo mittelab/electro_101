@@ -9,18 +9,18 @@
 \usepackage{lmodern}
 \usepackage{tikz}
 \usepackage{circuitikz}
-
 \usepackage{siunitx}
-
 \usetikzlibrary{decorations}
-\usetikzlibrary{circuits.ee.IEC}
+%\usetikzlibrary{circuits.ee.IE C}
 %\usetikzlibrary{snakes}
+
+\graphicspath{{./img/}}
 
 \title{Corso di Introduzione all'Elettronica}
 \author[Alja\v{z}, Ruggero]{Alja\v{z} Srebrni\v{c} \and Ruggero Lot}
 \date[23/5]{Maggio 2015}
 \institute[Mittelab]{Mittelab}
-\logo{\includegraphics[scale=0.07]{./img/mittelab.pdf}}
+\logo{\includegraphics[scale=0.07]{mittelab.pdf}}
 \usetheme{Rochester}
 %\useoutertheme[infolines]{}
 \setbeamercovered{dynamic}
@@ -34,9 +34,7 @@
 	\begin{frame}\frametitle{Piano della presentazione}
 		\tableofcontents	
 	\end{frame}
-	\note{Noi volgiamo partire da una base molto semplice di struttura della materia per capire cosa genera in realtà questa corrente e riuscire ad immaginarci un po' cosa sta accadendo
-prima di thompson non si pensava che l'atomo fosse un unità indivisibile poi invece tutto cambi}
 
 	\input{firstpart.tex}
-	\input{secondpart.tex}
+	%\input{secondpart.tex}
 \end{document} 
