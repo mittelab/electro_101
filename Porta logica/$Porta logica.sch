@@ -826,19 +826,8 @@ U 555C3620
 F0 "clock" 50
 F1 "clock.sch" 50
 F2 "Clk" O R 8600 5950 60 
-F3 "Reset" O R 8600 6200 60 
+F3 "~Reset" O R 8600 6200 60 
 $EndSheet
-$Comp
-L 74HC00 U3
-U 1 1 555C716A
-P 9600 6600
-F 0 "U3" H 9600 6650 60  0000 C CNN
-F 1 "74HC00" H 9600 6500 60  0000 C CNN
-F 2 "~" H 9600 6600 60  0000 C CNN
-F 3 "~" H 9600 6600 60  0000 C CNN
-	1    9600 6600
-	1    0    0    -1  
-$EndComp
 $Comp
 L CONN_2 P2
 U 1 1 555C8270
@@ -875,17 +864,14 @@ Wire Wire Line
 	750  1800 900  1800
 Wire Wire Line
 	750  1600 750  1800
-Connection ~ 9000 6600
 Wire Wire Line
 	8700 6200 8600 6200
 Wire Wire Line
-	8700 6600 8700 6200
+	8700 6450 8700 6200
 Wire Wire Line
-	9000 6600 8700 6600
+	1500 1800 1600 1800
 Wire Wire Line
-	9000 6500 9000 6700
-Wire Wire Line
-	1500 1800 2050 1800
+	1600 1800 2050 1800
 Wire Wire Line
 	7400 6250 7250 6250
 Wire Wire Line
@@ -908,7 +894,13 @@ Connection ~ 5100 2100
 Connection ~ 5100 1800
 Connection ~ 5100 1500
 Wire Wire Line
-	9800 3250 9800 4250
+	9800 3250 9800 3550
+Wire Wire Line
+	9800 3550 9800 3850
+Wire Wire Line
+	9800 3850 9800 4150
+Wire Wire Line
+	9800 4150 9800 4250
 Wire Wire Line
 	8250 4150 8750 4150
 Wire Wire Line
@@ -953,7 +945,9 @@ Wire Wire Line
 	9500 2000 9600 2000
 Connection ~ 7650 2000
 Wire Wire Line
-	7650 1900 7650 2100
+	7650 1900 7650 2000
+Wire Wire Line
+	7650 2000 7650 2100
 Wire Wire Line
 	7500 2000 7650 2000
 Wire Wire Line
@@ -970,14 +964,18 @@ Wire Wire Line
 	6300 1200 6300 1050
 Connection ~ 1600 5400
 Wire Wire Line
-	1500 5400 2100 5400
+	1500 5400 1600 5400
+Wire Wire Line
+	1600 5400 2100 5400
 Connection ~ 1600 1800
 Wire Wire Line
 	2150 1500 2150 1600
 Wire Wire Line
 	1600 5950 1600 6050
 Wire Wire Line
-	1600 4000 1600 5450
+	1600 4000 1600 5400
+Wire Wire Line
+	1600 5400 1600 5450
 Wire Wire Line
 	750  5400 900  5400
 Wire Wire Line
@@ -987,7 +985,9 @@ Wire Wire Line
 Wire Wire Line
 	2050 6100 2050 6000
 Wire Wire Line
-	9000 5850 9000 6050
+	9000 5850 9000 5950
+Wire Wire Line
+	9000 5950 9000 6050
 Wire Wire Line
 	2050 2300 1800 2300
 Wire Wire Line
@@ -1037,7 +1037,21 @@ Wire Wire Line
 Wire Wire Line
 	3500 5400 3500 4800
 Wire Wire Line
-	5150 4800 5150 7050
+	5150 4800 5150 5100
+Wire Wire Line
+	5150 5100 5150 5400
+Wire Wire Line
+	5150 5400 5150 5700
+Wire Wire Line
+	5150 5700 5150 6000
+Wire Wire Line
+	5150 6000 5150 6300
+Wire Wire Line
+	5150 6300 5150 6600
+Wire Wire Line
+	5150 6600 5150 6900
+Wire Wire Line
+	5150 6900 5150 7050
 Wire Wire Line
 	4650 4800 4500 4800
 Wire Wire Line
@@ -1097,7 +1111,21 @@ Wire Wire Line
 Wire Wire Line
 	3450 1800 3450 1200
 Wire Wire Line
-	5100 1200 5100 3450
+	5100 1200 5100 1500
+Wire Wire Line
+	5100 1500 5100 1800
+Wire Wire Line
+	5100 1800 5100 2100
+Wire Wire Line
+	5100 2100 5100 2400
+Wire Wire Line
+	5100 2400 5100 2700
+Wire Wire Line
+	5100 2700 5100 3000
+Wire Wire Line
+	5100 3000 5100 3300
+Wire Wire Line
+	5100 3300 5100 3450
 Wire Wire Line
 	4600 1200 4450 1200
 Wire Wire Line
@@ -1157,10 +1185,8 @@ Wire Wire Line
 	1800 2100 2050 2100
 Wire Wire Line
 	1850 5700 2100 5700
-Text Label 10500 6600 2    60   ~ 0
+Text Label 9150 6450 2    60   ~ 0
 reset
-Wire Wire Line
-	10200 6600 10500 6600
 Text Label 3700 3300 0    60   ~ 0
 in_a
 Text Label 6300 2350 1    60   ~ 0
@@ -1193,7 +1219,9 @@ Wire Wire Line
 Wire Wire Line
 	1650 1500 1600 1500
 Wire Wire Line
-	1600 1500 1600 3800
+	1600 1500 1600 1800
+Wire Wire Line
+	1600 1800 1600 3800
 Wire Wire Line
 	1600 3800 1050 3800
 Text Label 6550 3550 0    60   ~ 0
@@ -1216,4 +1244,8 @@ F1 "power.sch" 50
 F2 "Gnd" O R 7250 6250 60 
 F3 "Vcc" O R 7250 6000 60 
 $EndSheet
+Wire Wire Line
+	8700 6450 9150 6450
+Wire Wire Line
+	9150 6450 9150 6450
 $EndSCHEMATC
