@@ -9,5 +9,8 @@
 *.synctex.gz  
 *.vrb
 
+# Emacs exclude files
+auto/
+
 # KiCad Ignores
 *.bak
