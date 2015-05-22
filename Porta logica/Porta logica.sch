@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -64,7 +63,7 @@ F 1 "LED_rosso" H 4250 900 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4250 1000 60  0001 C CNN
 F 3 "~" H 4250 1000 60  0000 C CNN
 	1    4250 1000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D2
@@ -75,7 +74,7 @@ F 1 "LED_rosso" H 4250 1200 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4250 1300 60  0001 C CNN
 F 3 "~" H 4250 1300 60  0000 C CNN
 	1    4250 1300
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D3
@@ -86,7 +85,7 @@ F 1 "LED_rosso" H 4250 1500 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4250 1600 60  0001 C CNN
 F 3 "~" H 4250 1600 60  0000 C CNN
 	1    4250 1600
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D4
@@ -97,7 +96,7 @@ F 1 "LED_rosso" H 4250 1800 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4250 1900 60  0001 C CNN
 F 3 "~" H 4250 1900 60  0000 C CNN
 	1    4250 1900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D5
@@ -108,7 +107,7 @@ F 1 "LED_rosso" H 4250 2100 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4250 2200 60  0001 C CNN
 F 3 "~" H 4250 2200 60  0000 C CNN
 	1    4250 2200
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D6
@@ -119,7 +118,7 @@ F 1 "LED_rosso" H 4250 2400 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4250 2500 60  0001 C CNN
 F 3 "~" H 4250 2500 60  0000 C CNN
 	1    4250 2500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D7
@@ -130,18 +129,7 @@ F 1 "LED_rosso" H 4250 2700 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4250 2800 60  0001 C CNN
 F 3 "~" H 4250 2800 60  0000 C CNN
 	1    4250 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED D8
-U 1 1 555B2BAC
-P 4250 3100
-F 0 "D8" H 4250 3200 50  0000 C CNN
-F 1 "LED_rosso" H 4250 3000 50  0000 C CNN
-F 2 "LEDs:LED-5MM" H 4250 3100 60  0001 C CNN
-F 3 "~" H 4250 3100 60  0000 C CNN
-	1    4250 3100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R3
@@ -149,7 +137,7 @@ U 1 1 555B2C48
 P 4850 1000
 F 0 "R3" V 4930 1000 40  0000 C CNN
 F 1 "220" V 4857 1001 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 1000 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 1000 30  0001 C CNN
 F 3 "~" H 4850 1000 30  0000 C CNN
 	1    4850 1000
 	0    -1   -1   0   
@@ -160,7 +148,7 @@ U 1 1 555B2CD5
 P 4850 1300
 F 0 "R4" V 4930 1300 40  0000 C CNN
 F 1 "220" V 4857 1301 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 1300 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 1300 30  0001 C CNN
 F 3 "~" H 4850 1300 30  0000 C CNN
 	1    4850 1300
 	0    -1   -1   0   
@@ -171,7 +159,7 @@ U 1 1 555B2CDB
 P 4850 1600
 F 0 "R5" V 4930 1600 40  0000 C CNN
 F 1 "220" V 4857 1601 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 1600 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 1600 30  0001 C CNN
 F 3 "~" H 4850 1600 30  0000 C CNN
 	1    4850 1600
 	0    -1   -1   0   
@@ -182,7 +170,7 @@ U 1 1 555B2CE1
 P 4850 1900
 F 0 "R6" V 4930 1900 40  0000 C CNN
 F 1 "220" V 4857 1901 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 1900 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 1900 30  0001 C CNN
 F 3 "~" H 4850 1900 30  0000 C CNN
 	1    4850 1900
 	0    -1   -1   0   
@@ -193,7 +181,7 @@ U 1 1 555B2CE7
 P 4850 2200
 F 0 "R7" V 4930 2200 40  0000 C CNN
 F 1 "220" V 4857 2201 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 2200 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 2200 30  0001 C CNN
 F 3 "~" H 4850 2200 30  0000 C CNN
 	1    4850 2200
 	0    -1   -1   0   
@@ -204,7 +192,7 @@ U 1 1 555B2CED
 P 4850 2500
 F 0 "R8" V 4930 2500 40  0000 C CNN
 F 1 "220" V 4857 2501 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 2500 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 2500 30  0001 C CNN
 F 3 "~" H 4850 2500 30  0000 C CNN
 	1    4850 2500
 	0    -1   -1   0   
@@ -215,7 +203,7 @@ U 1 1 555B2CF3
 P 4850 2800
 F 0 "R9" V 4930 2800 40  0000 C CNN
 F 1 "220" V 4857 2801 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 2800 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 2800 30  0001 C CNN
 F 3 "~" H 4850 2800 30  0000 C CNN
 	1    4850 2800
 	0    -1   -1   0   
@@ -226,7 +214,7 @@ U 1 1 555B2CF9
 P 4850 3100
 F 0 "R10" V 4930 3100 40  0000 C CNN
 F 1 "220" V 4857 3101 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 3100 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4780 3100 30  0001 C CNN
 F 3 "~" H 4850 3100 30  0000 C CNN
 	1    4850 3100
 	0    -1   -1   0   
@@ -262,7 +250,7 @@ F 1 "LED_rosso" H 4300 3800 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4300 3900 60  0001 C CNN
 F 3 "~" H 4300 3900 60  0000 C CNN
 	1    4300 3900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D10
@@ -273,7 +261,7 @@ F 1 "LED_rosso" H 4300 4100 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4300 4200 60  0001 C CNN
 F 3 "~" H 4300 4200 60  0000 C CNN
 	1    4300 4200
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D11
@@ -284,7 +272,7 @@ F 1 "LED_rosso" H 4300 4400 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4300 4500 60  0001 C CNN
 F 3 "~" H 4300 4500 60  0000 C CNN
 	1    4300 4500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D12
@@ -295,7 +283,7 @@ F 1 "LED_rosso" H 4300 4700 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4300 4800 60  0001 C CNN
 F 3 "~" H 4300 4800 60  0000 C CNN
 	1    4300 4800
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D13
@@ -306,7 +294,7 @@ F 1 "LED_rosso" H 4300 5000 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4300 5100 60  0001 C CNN
 F 3 "~" H 4300 5100 60  0000 C CNN
 	1    4300 5100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D14
@@ -317,7 +305,7 @@ F 1 "LED_rosso" H 4300 5300 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4300 5400 60  0001 C CNN
 F 3 "~" H 4300 5400 60  0000 C CNN
 	1    4300 5400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D15
@@ -328,18 +316,7 @@ F 1 "LED_rosso" H 4300 5600 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 4300 5700 60  0001 C CNN
 F 3 "~" H 4300 5700 60  0000 C CNN
 	1    4300 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED D16
-U 1 1 555B2E7E
-P 4300 6000
-F 0 "D16" H 4300 6100 50  0000 C CNN
-F 1 "LED_rosso" H 4300 5900 50  0000 C CNN
-F 2 "LEDs:LED-5MM" H 4300 6000 60  0001 C CNN
-F 3 "~" H 4300 6000 60  0000 C CNN
-	1    4300 6000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R11
@@ -347,7 +324,7 @@ U 1 1 555B2E84
 P 4900 3900
 F 0 "R11" V 4980 3900 40  0000 C CNN
 F 1 "220" V 4907 3901 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 3900 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 3900 30  0001 C CNN
 F 3 "~" H 4900 3900 30  0000 C CNN
 	1    4900 3900
 	0    -1   -1   0   
@@ -358,7 +335,7 @@ U 1 1 555B2E8A
 P 4900 4200
 F 0 "R12" V 4980 4200 40  0000 C CNN
 F 1 "220" V 4907 4201 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 4200 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 4200 30  0001 C CNN
 F 3 "~" H 4900 4200 30  0000 C CNN
 	1    4900 4200
 	0    -1   -1   0   
@@ -369,7 +346,7 @@ U 1 1 555B2E90
 P 4900 4500
 F 0 "R13" V 4980 4500 40  0000 C CNN
 F 1 "220" V 4907 4501 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 4500 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 4500 30  0001 C CNN
 F 3 "~" H 4900 4500 30  0000 C CNN
 	1    4900 4500
 	0    -1   -1   0   
@@ -380,7 +357,7 @@ U 1 1 555B2E96
 P 4900 4800
 F 0 "R14" V 4980 4800 40  0000 C CNN
 F 1 "220" V 4907 4801 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 4800 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 4800 30  0001 C CNN
 F 3 "~" H 4900 4800 30  0000 C CNN
 	1    4900 4800
 	0    -1   -1   0   
@@ -391,7 +368,7 @@ U 1 1 555B2E9C
 P 4900 5100
 F 0 "R15" V 4980 5100 40  0000 C CNN
 F 1 "220" V 4907 5101 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 5100 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 5100 30  0001 C CNN
 F 3 "~" H 4900 5100 30  0000 C CNN
 	1    4900 5100
 	0    -1   -1   0   
@@ -402,7 +379,7 @@ U 1 1 555B2EA2
 P 4900 5400
 F 0 "R16" V 4980 5400 40  0000 C CNN
 F 1 "220" V 4907 5401 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 5400 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 5400 30  0001 C CNN
 F 3 "~" H 4900 5400 30  0000 C CNN
 	1    4900 5400
 	0    -1   -1   0   
@@ -413,7 +390,7 @@ U 1 1 555B2EA8
 P 4900 5700
 F 0 "R17" V 4980 5700 40  0000 C CNN
 F 1 "220" V 4907 5701 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 5700 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 5700 30  0001 C CNN
 F 3 "~" H 4900 5700 30  0000 C CNN
 	1    4900 5700
 	0    -1   -1   0   
@@ -424,7 +401,7 @@ U 1 1 555B2EAE
 P 4900 6000
 F 0 "R18" V 4980 6000 40  0000 C CNN
 F 1 "220" V 4907 6001 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 6000 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 4830 6000 30  0001 C CNN
 F 3 "~" H 4900 6000 30  0000 C CNN
 	1    4900 6000
 	0    -1   -1   0   
@@ -501,7 +478,7 @@ U 1 1 555B4010
 P 1600 4800
 F 0 "R1" V 1680 4800 40  0000 C CNN
 F 1 "10k" V 1607 4801 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 1530 4800 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 1530 4800 30  0001 C CNN
 F 3 "~" H 1600 4800 30  0000 C CNN
 	1    1600 4800
 	1    0    0    -1  
@@ -529,102 +506,47 @@ F 3 "" H 750 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR6
-U 1 1 555B421A
-P 2150 1350
-F 0 "#PWR6" H 2150 1350 30  0001 C CNN
-F 1 "GND" H 2150 1280 30  0001 C CNN
-F 2 "" H 2150 1350 60  0000 C CNN
-F 3 "" H 2150 1350 60  0000 C CNN
-	1    2150 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R2
 U 1 1 555B4220
-P 1900 1300
-F 0 "R2" V 1980 1300 40  0000 C CNN
-F 1 "10k" V 1907 1301 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 1830 1300 30  0000 C CNN
-F 3 "~" H 1900 1300 30  0000 C CNN
-	1    1900 1300
+P 1850 2850
+F 0 "R2" V 1930 2850 40  0000 C CNN
+F 1 "10k" V 1857 2851 40  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 1780 2850 30  0001 C CNN
+F 3 "~" H 1850 2850 30  0000 C CNN
+	1    1850 2850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L LED D17
 U 1 1 555B451F
-P 6300 1400
-F 0 "D17" H 6300 1500 50  0000 C CNN
-F 1 "LED_verde" H 6300 1300 50  0000 C CNN
-F 2 "LEDs:LED-5MM" H 6300 1400 60  0001 C CNN
-F 3 "~" H 6300 1400 60  0000 C CNN
-	1    6300 1400
-	0    -1   -1   0   
+P 4300 6000
+F 0 "D17" H 4300 6100 50  0000 C CNN
+F 1 "LED_verde" H 4300 5900 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 4300 6000 60  0001 C CNN
+F 3 "~" H 4300 6000 60  0000 C CNN
+	1    4300 6000
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D18
 U 1 1 555B4531
-P 6300 2600
-F 0 "D18" H 6300 2700 50  0000 C CNN
-F 1 "LED_verde" H 6300 2500 50  0000 C CNN
-F 2 "LEDs:LED-5MM" H 6300 2600 60  0001 C CNN
-F 3 "~" H 6300 2600 60  0000 C CNN
-	1    6300 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L R R19
-U 1 1 555B4546
-P 6550 1050
-F 0 "R19" V 6630 1050 40  0000 C CNN
-F 1 "220" V 6557 1051 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 6480 1050 30  0000 C CNN
-F 3 "~" H 6550 1050 30  0000 C CNN
-	1    6550 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L R R20
-U 1 1 555B454C
-P 6550 2900
-F 0 "R20" V 6630 2900 40  0000 C CNN
-F 1 "220" V 6557 2901 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 6480 2900 30  0000 C CNN
-F 3 "~" H 6550 2900 30  0000 C CNN
-	1    6550 2900
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR13
-U 1 1 555B474B
-P 6850 1100
-F 0 "#PWR13" H 6850 1100 30  0001 C CNN
-F 1 "GND" H 6850 1030 30  0001 C CNN
-F 2 "" H 6850 1100 60  0000 C CNN
-F 3 "" H 6850 1100 60  0000 C CNN
-	1    6850 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR12
-U 1 1 555B475A
-P 6800 3000
-F 0 "#PWR12" H 6800 3000 30  0001 C CNN
-F 1 "GND" H 6800 2930 30  0001 C CNN
-F 2 "" H 6800 3000 60  0000 C CNN
-F 3 "" H 6800 3000 60  0000 C CNN
-	1    6800 3000
-	1    0    0    -1  
+P 4250 3100
+F 0 "D18" H 4250 3200 50  0000 C CNN
+F 1 "LED_verde" H 4250 3000 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 4250 3100 60  0001 C CNN
+F 3 "~" H 4250 3100 60  0000 C CNN
+	1    4250 3100
+	-1   0    0    1   
 $EndComp
 $Comp
 L 74HC00 U4
 U 1 1 555B4AA7
-P 6900 2000
-F 0 "U4" H 6900 2050 60  0000 C CNN
-F 1 "74HC00" H 6900 1900 60  0000 C CNN
-F 2 "Housings_SOIC:SOIC-16_7.5x10.3mm_Pitch1.27mm" H 6900 2000 60  0001 C CNN
-F 3 "~" H 6900 2000 60  0000 C CNN
-	1    6900 2000
+P 6700 2000
+F 0 "U4" H 6700 2050 60  0000 C CNN
+F 1 "74HC00" H 6700 1900 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_7.5x10.3mm_Pitch1.27mm" H 6700 2000 60  0001 C CNN
+F 3 "~" H 6700 2000 60  0000 C CNN
+	1    6700 2000
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3500 5400
@@ -632,45 +554,45 @@ NoConn ~ 3450 2500
 $Comp
 L 74HC00 U4
 U 2 1 555B4BE0
-P 8250 2000
-F 0 "U4" H 8250 2050 60  0000 C CNN
-F 1 "74HC00" H 8250 1900 60  0000 C CNN
-F 2 "Housings_SOIC:SOIC-16_7.5x10.3mm_Pitch1.27mm" H 8250 2000 60  0001 C CNN
-F 3 "~" H 8250 2000 60  0000 C CNN
-	2    8250 2000
+P 8050 2000
+F 0 "U4" H 8050 2050 60  0000 C CNN
+F 1 "74HC00" H 8050 1900 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_7.5x10.3mm_Pitch1.27mm" H 8050 2000 60  0001 C CNN
+F 3 "~" H 8050 2000 60  0000 C CNN
+	2    8050 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D23
 U 1 1 555B4D06
-P 9300 2000
-F 0 "D23" H 9300 2100 50  0000 C CNN
-F 1 "LED_verde" H 9300 1900 50  0000 C CNN
-F 2 "LEDs:LED-5MM" H 9300 2000 60  0001 C CNN
-F 3 "~" H 9300 2000 60  0000 C CNN
-	1    9300 2000
-	1    0    0    -1  
+P 9100 2000
+F 0 "D23" H 9100 2100 50  0000 C CNN
+F 1 "LED_verde" H 9100 1900 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 9100 2000 60  0001 C CNN
+F 3 "~" H 9100 2000 60  0000 C CNN
+	1    9100 2000
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R25
 U 1 1 555B4D0C
-P 9850 2000
-F 0 "R25" V 9930 2000 40  0000 C CNN
-F 1 "220" V 9857 2001 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9780 2000 30  0000 C CNN
-F 3 "~" H 9850 2000 30  0000 C CNN
-	1    9850 2000
+P 9650 2000
+F 0 "R25" V 9730 2000 40  0000 C CNN
+F 1 "220" V 9657 2001 40  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9580 2000 30  0001 C CNN
+F 3 "~" H 9650 2000 30  0000 C CNN
+	1    9650 2000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR15
 U 1 1 555B4D13
-P 10150 2200
-F 0 "#PWR15" H 10150 2200 30  0001 C CNN
-F 1 "GND" H 10150 2130 30  0001 C CNN
-F 2 "" H 10150 2200 60  0000 C CNN
-F 3 "" H 10150 2200 60  0000 C CNN
-	1    10150 2200
+P 9950 2200
+F 0 "#PWR15" H 9950 2200 30  0001 C CNN
+F 1 "GND" H 9950 2130 30  0001 C CNN
+F 2 "" H 9950 2200 60  0000 C CNN
+F 3 "" H 9950 2200 60  0000 C CNN
+	1    9950 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -693,7 +615,7 @@ F 1 "LED_rosso" H 8550 4300 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 8550 4400 60  0001 C CNN
 F 3 "~" H 8550 4400 60  0000 C CNN
 	1    8550 4400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D20
@@ -704,7 +626,7 @@ F 1 "LED_rosso" H 8550 4600 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 8550 4700 60  0001 C CNN
 F 3 "~" H 8550 4700 60  0000 C CNN
 	1    8550 4700
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D21
@@ -715,7 +637,7 @@ F 1 "LED_rosso" H 8550 4900 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 8550 5000 60  0001 C CNN
 F 3 "~" H 8550 5000 60  0000 C CNN
 	1    8550 5000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D22
@@ -726,7 +648,7 @@ F 1 "LED_rosso" H 8550 5200 50  0000 C CNN
 F 2 "LEDs:LED-5MM" H 8550 5300 60  0001 C CNN
 F 3 "~" H 8550 5300 60  0000 C CNN
 	1    8550 5300
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R21
@@ -734,7 +656,7 @@ U 1 1 555B7A5A
 P 9150 4400
 F 0 "R21" V 9230 4400 40  0000 C CNN
 F 1 "220" V 9157 4401 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9080 4400 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9080 4400 30  0001 C CNN
 F 3 "~" H 9150 4400 30  0000 C CNN
 	1    9150 4400
 	0    -1   -1   0   
@@ -745,7 +667,7 @@ U 1 1 555B7A60
 P 9150 4700
 F 0 "R22" V 9230 4700 40  0000 C CNN
 F 1 "220" V 9157 4701 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9080 4700 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9080 4700 30  0001 C CNN
 F 3 "~" H 9150 4700 30  0000 C CNN
 	1    9150 4700
 	0    -1   -1   0   
@@ -756,7 +678,7 @@ U 1 1 555B7A66
 P 9150 5000
 F 0 "R23" V 9230 5000 40  0000 C CNN
 F 1 "220" V 9157 5001 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9080 5000 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9080 5000 30  0001 C CNN
 F 3 "~" H 9150 5000 30  0000 C CNN
 	1    9150 5000
 	0    -1   -1   0   
@@ -767,7 +689,7 @@ U 1 1 555B7A6C
 P 9150 5300
 F 0 "R24" V 9230 5300 40  0000 C CNN
 F 1 "220" V 9157 5301 40  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9080 5300 30  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 9080 5300 30  0001 C CNN
 F 3 "~" H 9150 5300 30  0000 C CNN
 	1    9150 5300
 	0    -1   -1   0   
@@ -847,11 +769,9 @@ Text Label 6450 7350 2    60   ~ 0
 reset
 Text Label 3700 3100 0    60   ~ 0
 in_a
-Text Label 6300 2350 1    60   ~ 0
+Text Label 5850 2100 0    60   ~ 0
 in_a
 Text Label 3750 6000 0    60   ~ 0
-in_b
-Text Label 6300 1900 1    60   ~ 0
 in_b
 Text Label 6450 7100 2    60   ~ 0
 ~clock
@@ -865,7 +785,7 @@ Text Label 9600 5350 0    60   ~ 0
 clock
 Text Label 6400 4700 0    60   ~ 0
 out
-Text Label 8900 2000 0    60   ~ 0
+Text Label 8700 2000 0    60   ~ 0
 out
 Wire Wire Line
 	8050 5550 9850 5550
@@ -937,34 +857,22 @@ Wire Wire Line
 Wire Wire Line
 	8750 5300 9000 5300
 Wire Wire Line
-	10150 2000 10150 2200
+	9950 2000 9950 2200
 Wire Wire Line
-	10000 2000 10150 2000
+	9800 2000 9950 2000
 Wire Wire Line
-	9500 2000 9700 2000
-Connection ~ 7650 2000
+	9300 2000 9500 2000
+Connection ~ 7450 2000
 Wire Wire Line
-	7650 1900 7650 2100
+	7450 1900 7450 2100
 Wire Wire Line
-	7500 2000 7650 2000
+	7300 2000 7450 2000
 Wire Wire Line
-	6300 2400 6300 2100
-Wire Wire Line
-	6300 1600 6300 1900
-Wire Wire Line
-	6850 1050 6850 1100
-Wire Wire Line
-	6850 1050 6700 1050
-Wire Wire Line
-	6300 2900 6300 2800
-Wire Wire Line
-	6300 1200 6300 1050
+	6100 2100 5850 2100
 Connection ~ 1600 4500
 Wire Wire Line
 	1500 4500 2100 4500
 Connection ~ 1600 1600
-Wire Wire Line
-	2150 1300 2150 1350
 Wire Wire Line
 	1600 4950 1600 5150
 Wire Wire Line
@@ -1128,21 +1036,13 @@ Wire Wire Line
 Wire Wire Line
 	1050 3050 1600 3050
 Wire Wire Line
-	1600 1300 1750 1300
+	1600 1600 1600 2850
 Wire Wire Line
-	1600 1300 1600 2850
-Wire Wire Line
-	1600 2850 1050 2850
+	1050 2850 1700 2850
 Wire Wire Line
 	6400 4700 6600 4700
 Wire Wire Line
-	8850 2000 9100 2000
-Wire Wire Line
-	6800 2900 6700 2900
-Wire Wire Line
-	6800 2900 6800 3000
-Wire Wire Line
-	2150 1300 2050 1300
+	8650 2000 8900 2000
 Wire Wire Line
 	5000 1000 5100 1000
 Wire Wire Line
@@ -1175,10 +1075,6 @@ Wire Wire Line
 	5050 5100 5150 5100
 Wire Wire Line
 	5050 4800 5150 4800
-Wire Wire Line
-	6400 2900 6300 2900
-Wire Wire Line
-	6300 1050 6400 1050
 Wire Wire Line
 	9300 5300 9400 5300
 Wire Wire Line
@@ -1228,7 +1124,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 7100 1150 7450
 Wire Wire Line
-	3400 7000 3400 6850
+	3400 6850 3400 7000
 Connection ~ 3400 6900
 $Comp
 L PWR_FLAG #FLG1
@@ -1300,4 +1196,24 @@ F 3 "" H 2750 6950 60  0000 C CNN
 	1    2750 6950
 	1    0    0    -1  
 $EndComp
+Text Label 5850 1900 0    60   ~ 0
+in_b
+Wire Wire Line
+	5850 1900 6100 1900
+$Comp
+L GND #PWR?
+U 1 1 555FB14F
+P 2100 2900
+F 0 "#PWR?" H 2100 2900 30  0001 C CNN
+F 1 "GND" H 2100 2830 30  0001 C CNN
+F 2 "" H 2100 2900 60  0000 C CNN
+F 3 "" H 2100 2900 60  0000 C CNN
+	1    2100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2850 2000 2850
+Connection ~ 1600 2850
+Wire Wire Line
+	2100 2900 2100 2850
 $EndSCHEMATC
