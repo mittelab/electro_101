@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-may-01 BZR unknown)-MacPorts   date = Venerdì 22 Maggio 2015 11:21:20
+Cmp-Mod V01 Created by Cvpcb (after 2015-may-01 BZR unknown)-MacPorts   date = Venerdì 22 Maggio 2015 12:33:19
 
 BeginCmp
 TimeStamp = /555B8292/555B88F6;
@@ -242,210 +242,210 @@ BeginCmp
 TimeStamp = /555B4010;
 Reference = R1;
 ValeurCmp = 10k;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B4220;
 Reference = R2;
 ValeurCmp = 10k;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2C48;
 Reference = R3;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2CD5;
 Reference = R4;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2CDB;
 Reference = R5;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2CE1;
 Reference = R6;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2CE7;
 Reference = R7;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2CED;
 Reference = R8;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2CF3;
 Reference = R9;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2CF9;
 Reference = R10;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2E84;
 Reference = R11;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2E8A;
 Reference = R12;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2E90;
 Reference = R13;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2E96;
 Reference = R14;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2E9C;
 Reference = R15;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2EA2;
 Reference = R16;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2EA8;
 Reference = R17;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B2EAE;
 Reference = R18;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B4546;
 Reference = R19;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B454C;
 Reference = R20;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B7A5A;
 Reference = R21;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B7A60;
 Reference = R22;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B7A66;
 Reference = R23;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B7A6C;
 Reference = R24;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555B4D0C;
 Reference = R25;
 ValeurCmp = 220;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555C3620/555CE3C6;
 Reference = R26;
 ValeurCmp = 10k;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555C3620/555CE354;
 Reference = R27;
 ValeurCmp = 10k;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555C3620/555C7D82;
 Reference = R28;
 ValeurCmp = 12M;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555C3620/555C7D7C;
 Reference = R29;
 ValeurCmp = 12M;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /555C3620/555C3853;
 Reference = R31;
 ValeurCmp = 68k;
-IdModule  = Discret:R4;
+IdModule  = Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering;
 EndCmp
 
 BeginCmp
