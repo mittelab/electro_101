@@ -14,3 +14,4 @@ auto/
 
 # KiCad Ignores
 *.bak
+*.kicad_pcb-bak
